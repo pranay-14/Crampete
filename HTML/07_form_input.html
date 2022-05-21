@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Forms & Input</title>
+    <style>
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-left: 20px;
+            width: 20%;
+        }
+        #submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 18px;
+            width: 20%;
+        }
+        input[type=text], select{
+            width: 90%;
+            padding: 12px 20px;
+            border-radius: 3px;
+            margin-right: 12px;
+            display: inline-block;
+            border-color: #4CAF50;
+        }
+        input[type=email] {
+            width: 90%;
+            padding: 12px 20px;
+            border-radius: 3px;
+            margin-right: 10px;
+            display: inline-block;
+            border-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <th>
+                    <img src="/images/sample.png">
+                </th>
+                <th>
+                    <h1>Welcome to Mastan IT Solutions</h1>
+                </th>
+            </thead>
+        </table>
+        <br>
+        <div> 
+            <!-- Text  -->
+            <label for="name"><strong>Name</strong></label><br><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <br>
+        <div>
+            <!-- Email -->
+            <label for="email"><strong>Email</strong></label><br><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <br>
+        <div>
+            <!-- Text Area -->
+            <label for="message"><strong>Message</strong></label><br><br>
+            <textarea name="message" id="message" rows="10" cols="50" placeholder="enter the message"></textarea>
+        </div>
+        <br>
+        <div class="gender">
+            <!-- Select tag like dropdown -->
+            <label for="gender"><strong>Gender :</strong></label><br><br>
+            <select name="gender" id="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="none">I don't want to Say</option>
+            </select>
+        </div>
+        <br>
+        <div class="age"> 
+            <!-- Number -->
+            <label for="age"><strong>Enter the Age :</strong></label><br><br>
+            <input type="number" name="age" id="age" placeholder="Enter the age">
+        </div>
+        <br><br>
+        <div class="dateofbirth"> 
+            <!-- Date of Birth -->
+            <label for="dateofbirth"><strong>Date Of Birth :</strong></label><br><br>
+            <input style="padding: 10px 12px; width: 25%;" type="date" name="dateofbirth" id="dateofbirth">
+        </div>
+        <br>
+        <div> 
+            <!-- Radio button -->
+            <label for="nationality"><strong>Nationality : </strong></label>
+            <ul class="nationality" style="list-style: none; background-color: burlywood;"><br>
+                <li><input type="radio" name="nationality" id="nationality">Indian</li><br>
+                <li><input type="radio" name="nationality" id="nationality">American</li><br>
+                <li><input type="radio" name="nationality" id="nationality" checked>Asian</li><br>
+                <li><input type="radio" name="nationality" id="nationality">Indo-Asian</li><br>
+            </ul>
+        </div>
+        <br>
+        <div class="hobbies"> 
+            <!-- checkbox -->
+            <label for="hobbies"><strong>My Hobbies are :</strong></label>
+            <ul style="list-style: none; background-color: blanchedalmond;"><br>
+                <li><input type="checkbox" name="hobbies" id="hobbies">Playing Cricket</li><br>
+                <li><input type="checkbox" name="hobbies" id="hobbies">Reading Books</li><br>
+                <li><input type="checkbox" name="hobbies" id="hobbies" checked>Watching Movies</li><br>
+                <li><input type="checkbox" name="hobbies" id="hobbies">Others</li><br>
+            </ul>
+        </div>
+        <br>
+        <center>
+            <!-- Button using button tag and input -->
+            <input id="submit" type="button" value="Submit">
+            <button type="reset">Reset</button>
+        </center>     
+    </form>
+</body>
+</html>
